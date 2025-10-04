@@ -153,3 +153,7 @@ The Modern Web. (2022, October 20). How to make responsive portfolio website eas
 Subframe. (2023, July 15). CSS gradient button examples. Subframe. Retrieved October 3, 2025, from https://www.subframe.com/tips/css-gradient-button-examples
 
 GitHub. (n.d.). Portfolio website HTML CSS topic. GitHub. Retrieved October 3, 2025, from https://github.com/topics/portfolio-website-html-css
+
+
+# Author
+Kelvin Odum
