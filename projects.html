@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:640px)" />
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:641px) and (max-width:1024px)" />
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:1025px)" />
+  <style>
+    .project {
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+    .project h2 {
+      margin-bottom: 0.3rem;
+      font-size: 1.1rem;
+      color: #110D4F;
+    }
+    .project button {
+      background: linear-gradient(to right, #110D4F, #5000EB);
+      color: #fff;
+      border: none;
+      padding: 0.35rem 0.8rem;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.3rem;
+    }
+    .project button:hover {
+      background: linear-gradient(to right, #2C379C, #110D4F);
+    }
+    .description {
+      display: none;
+      margin-top: 0.3rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: #333;
+    }
+  </style>
+</head>
+<body class="light">
+
+<header class="site-header">
+  <a href="index.html" class="logo">Kelvin</a>
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="intro">
+    <h1 class="title">Projects</h1>
+    <p class="script">Some of my work</p>
+
+    <!-- Project 1 -->
+    <article class="project">
+      <h2>Cryptography & Authentication</h2>
+      <button onclick="toggleDescription(this)">View</button>
+      <p class="description">Researched encryption and secure authentication systems with emphasis on the protection of sensitive information.</p>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project">
+      <h2>Cloud Computing (Azure & AWS)</h2>
+      <button onclick="toggleDescription(this)">View</button>
+      <p class="description">Experience in cloud deployments, resource scaling and service optimization in Azure and AWS.</p>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project">
+      <h2>Python GUI & Data Visualization</h2>
+      <button onclick="toggleDescription(this)">View</button>
+      <p class="description">Developed Tkinter/PyQt apps and incorporated analysis and charts to create useful data tools.</p>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project">
+      <h2>Business Analytics</h2>
+      <button onclick="toggleDescription(this)">View</button>
+      <p class="description">Performed sales/data analysis with MS Excel & Access. Built the Durham Tax Calculator project.</p>
+    </article>
+
+    <!-- Project 5 -->
+    <article class="project">
+      <h2>SAP</h2>
+      <button onclick="toggleDescription(this)">View</button>
+      <p class="description">Explored SAP ERP modules to learn about the work of an enterprise and digital process management.</p>
+    </article>
+
+    <!-- Project 6 -->
+    <article class="project">
+      <h2>HTML Development</h2>
+      <button onclick="toggleDescription(this)">View</button>
+      <p class="description">Developed responsive and accessible web pages using HTML and CSS with an emphasis on readability and usability.</p>
+    </article>
+
+    <!-- Project 7 -->
+    <article class="project">
+      <h2>Trie Autocomplete system</h2>
+      <button onclick="toggleDescription(this)">View</button>
+      <p class="description">Designed and Implemented a Trie based autocomplete system and compared standard Trie vs Ternary Trie performance..</p>
+    </article>
+
+  </section>
+  <aside class="hero-photo"></aside>
+</main>
+
+<footer class="site-footer">
+   <small>© <span id="year"></span> Kelvin Odum - Contact:
+   <a href="mailto:chisom.odum@ontariotech.net">chisom.odum@ontariotechu.net</a>
+  </small>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function toggleDescription(button) {
+    const desc = button.nextElementSibling;
+    if (desc.style.display === "block") {
+      desc.style.display = "none";
+      button.textContent = "View";
+    } else {
+      desc.style.display = "block";
+      button.textContent = "Hide";
+    }
+  }
+</script>
+</body>
+</html>

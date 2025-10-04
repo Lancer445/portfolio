@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:640px)" />
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:641px) and (max-width:1024px)" />
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:1025px)" />
+  <style>
+
+    .media video {
+      max-width: 100%;   
+      border-radius: 8px;
+      display: block;
+      margin: 0 auto;
+    }
+    .media-caption {
+      display: block;
+      text-align: center;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body class="light">
+
+<header class="site-header">
+  <a href="index.html" class="logo">Kelvin</a>
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <!-- LEFT COLUMN: About text + video -->
+  <section class="intro">
+    <h1 class="title">About Me</h1>
+    <p class="script">My story</p>
+
+    <p>My name is Kelvin Odum, I am a Technology Management major, and a future front-end and web developer. I have a business mindset and technical knowledge in my background that enables me to design solutions that are practical and acceptable to users.</p>
+
+    <p>My specialties are the <strong>UI/UX, front-end development, and databases</strong>. I delight in creating  clean, accessible, designs that are comfortable to the user and communicate the story of the brand behind the design.</p>
+
+    <p>With over 3 years in Technology Management, I've  learned the importance of technology in organizations, business processes and problem-solving. I bring that same mindset into my projects — from designing webpages to working with tools like SAP, Excel, and Python.</p>
+
+    <p>I aspire to continue developing as a designer/developer, and creating tools that can simplify and enrich the lives of people.</p>
+
+    <!-- Intro video -->
+    <div class="media">
+      <video controls poster="assets/intro-poster2.png">
+        <source src="assets/intro4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <small class="media-caption">60 second introduction about myself</small>
+    </div>
+  </section>
+
+  <!-- RIGHT COLUMN: Portrait -->
+  <aside class="hero-photo">
+    <img class="media-photo" src="assets/me2.png" alt="Portrait of Kelvin">
+  </aside>
+</main>
+
+<footer class="site-footer">
+   <small>© <span id="year"></span> Kelvin Odum - Contact:
+   <a href="mailto:chisom.odum@ontariotech.net">chisom.odum@ontariotechu.net</a>
+  </small>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

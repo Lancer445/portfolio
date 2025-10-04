@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home</title>
+
+  <!-- Applying Google fonts for a better presentation -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:640px)" />
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:641px) and (max-width:1024px)" />
+  <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:1025px)" />
+</head>
+<body class="light">
+
+<header class="site-header">
+  <a href="index.html" class="logo">Kelvin</a>
+  <nav>
+    <ul class="nav">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav> 
+</header>
+
+<main class="container">
+  <!-- Introduction to the left of the webpage -->
+  <section class="intro">
+    <h1 class="title">Technology Managemnt Major<br>Kelvin Odum</h1>
+    <p class="script">A little introduction about myself</p>
+
+    <p>My name is Kelvin. I am a student in Technology Management and a future front-end and web developer. I attend to learn the way design and technology intersect to generate purposeful, useful, and effectual digital experiences.</p>
+
+    <p>My research and accruing experience are developing my solid knowledge base in both business strategy and technical problem-solving. This assists me to come out with clarity, accessibility and creativity in the projects I carry out and ensure that they not only appear good but they also run smoothly.</p>
+
+    <p>I love helping people tell their story—through thoughtful layouts, calm typography, and subtle motion. Whether it’s a personal brand site, a product landing, or a simple tool, I strive to build with empathy and craft.</p>
+
+    <p class="cta"><a class="btn" href="contact.html">Send a message</a></p>
+  </section>
+
+  <!-- Mission statement at the top left of the webpage -->
+  <aside class="hero-photo">
+    <blockquote class="mission">
+      “Technology Management major and upcoming front-end & web developer,  
+       striving to make digital experiences simple and effortless.”
+    </blockquote>
+  </aside>
+</main>
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Kelvin Odum - Contact:
+   <a href="mailto:chisom.odum@ontariotech.net">chisom.odum@ontariotechu.net</a>
+  </small>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
